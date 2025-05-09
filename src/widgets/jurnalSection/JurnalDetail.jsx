@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import './jurnal.scss';   
+import './Jurnal.scss';   
 
 export const JurnalDetail = () => {
   const location = useLocation();
