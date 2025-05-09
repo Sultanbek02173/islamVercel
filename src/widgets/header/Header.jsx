@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { IoSearch } from "react-icons/io5";
 import { FaEyeSlash } from "react-icons/fa6";
-import "./header.scss";
+import "./Header.scss";
 import "./styles/burgerMenu.scss"
 import { TopHeader } from "./components/TopHeader";
 import { Navigation } from "./components/Navigation";
