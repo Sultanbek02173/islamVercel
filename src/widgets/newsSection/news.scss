@@ -1,0 +1,295 @@
+.news__detail {
+  overflow: hidden;
+  position: relative;
+
+  .news__image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+
+  }
+
+
+  .news__content {
+    position: relative;
+
+
+    .news__head {
+      position: relative;
+
+
+
+      .news__subtitle {
+        position: absolute;
+        top: -65vw;
+        color: white;
+        font-size: 60px;
+
+      }
+
+      @media (max-width: 992px) {
+        .news__subtitle {
+          font-size: 45px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .news__subtitle {
+          font-size: 30px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .news__subtitle {
+          font-size: 20px;
+        }
+
+      }
+    }
+
+    .news__texts {
+      .news__text {
+        font-size: 20px;
+        margin-top: 4%;
+        font-weight: bold;
+      }
+
+      .news__hot {
+        h2 {
+          margin-top: 4%;
+          font-size: 30px;
+          color: rgba(0, 95, 75, 1);
+        }
+
+        p {
+          margin-top: 4%;
+          font-size: 20px;
+          width: 90%;
+        }
+      }
+
+      .news__daily {
+        h2 {
+          font-size: 30px;
+          margin-top: 4%;
+          color: rgba(0, 95, 75, 1);
+        }
+
+        li {
+          margin-top: 1%;
+          font-size: 20px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .news__text{
+          font-size: 18px;
+        }
+
+        .news__hot{
+          h2{
+            font-size: 27px;
+          }
+
+          p{
+            font-size: 18px;
+          }
+        }
+
+        .news__daily{
+          h2{
+            font-size: 27px;
+          }
+
+          li{
+            font-size: 18px;
+          }
+        }
+      }
+
+      @media (max-width: 576px) {
+        .news__text{
+          font-size: 15px;
+          margin-top: 10%;
+        }
+
+        .news__hot{
+          h2{
+            font-size: 27px;
+            margin-top: 10%;
+          }
+
+          p{
+            font-size: 18px;
+            margin-top: 10%;
+
+          }
+        }
+
+        .news__daily{
+          h2{
+            font-size: 27px;
+            margin-top: 10%;
+          }
+
+          li{
+            font-size: 18px;
+            margin-top: 7%;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+
+.news__content {
+  .news__subtitle{
+    position: relative;
+
+  }
+  .news__slides {
+    .news__texts {
+      margin-top: 2vw;
+
+      .news__name {
+        color: rgba(0, 95, 75, 1);
+        font-size: 30px;
+        margin-top: 4%;
+      }
+
+      .news__li {
+        font-size: 20px;
+        margin-top: 1%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .news__slides {
+      .news__texts {
+        .news__name {
+          font-size: 25px;
+        }
+
+        .news__li {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .news__slides {
+      .news__texts {
+        .news__name {
+          font-size: 20px;
+          margin-top: 10%;
+        }
+
+        .news__li {
+          font-size: 15px;
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+
+}
+
+.news__banner {
+  .news__title {
+    color: rgba(0, 95, 75, 1);
+    font-size: 60px;
+    margin-top: 2vw;
+  }
+
+  .hot__title{
+    font-size: 30px;
+    color: rgba(0, 95, 75, 1);
+  }
+
+  .hot__disc{
+    font-size: 20px;
+    margin-top: 4%;
+  }
+
+  .news__desc {
+    font-size: 21px;
+    margin-top: 4%;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .news__title {
+      font-size: 30px;
+    }
+
+    .news__desc {
+      font-size: 15px;
+    }
+
+    .hot__title{
+      font-size: 25px;
+    }
+
+    .hot__disc{
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .news__title {
+      font-size: 25px;
+      margin-top: 4%;
+    }
+
+    .news__desc {
+      font-size: 15px;
+      margin-top: 10%;
+    }
+
+    .hot__title{
+      margin-top: 10%;
+    }
+  }
+}
+
+
+//кароче код снизу рабочий их не трогать! я хотел удалить код сверху но думаю он мне еще пригодится
+
+.news__detail {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  height: 500px; 
+}
+
+.news__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news__subtitle-container {
+  position: absolute;
+  top: 20px; 
+  background-color: rgba(128, 128, 128, 0.34);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 10; 
+  color: white; 
+}
+
+.news__content {
+  margin-top: 20px;
+}
+
+.news__texts {
+  font-size: 16px;
+  line-height: 1.6;
+}

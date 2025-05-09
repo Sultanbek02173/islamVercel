@@ -1,0 +1,167 @@
+.vacancies {
+    &_content {
+        &_info {
+            border: 2px solid #005F4B;
+            margin-top: 60px;
+            padding: 30px;
+            width: 90%;
+
+            h3 {
+                font-size: 35px;
+                color: #005F4B;
+                margin-bottom: 20px;
+            }
+
+            h4 {
+                font-size: 35px;
+                color: #005F4B;
+                margin: 15px 0;
+            }
+
+            &_list {
+                list-style: none;
+                padding-left: 20px;
+                margin: 15px 0;
+
+                p {
+                    position: relative;
+                    padding: 8px 0;
+                    font-size: 30px;
+                    line-height: 1.4;
+
+                    &:before {
+                        position: absolute;
+                        left: -20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            &_contacts {
+                margin: 20px 0;
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 30px;
+
+                .email a,
+                .tel a {
+                    text-decoration: none;
+                    font-size: 25px;
+                }
+
+                .email {
+                    color: #1A4277;
+                }
+
+                .tel {
+                    font-weight: 600;
+                }
+            }
+
+            &_footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 30px;
+                padding-top: 20px;
+
+                .date {
+                    color: #666;
+                    font-size: 18px;
+                }
+
+                button {
+                    color: #005F4B;
+                    background: transparent;
+                    font-size: 22px;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    border: none;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .vacancies {
+        &_content {
+            &_info {
+                width: 90%;
+                margin: 20px auto;
+                padding: 15px;
+
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                    margin: 10px 0;
+                }
+
+                p,
+                &_list li {
+                    font-size: 16px;
+                }
+
+                &_contacts {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 15px;
+
+                    .email a,
+                    .tel a {
+                        font-size: 16px;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .vacancies {
+        &_content {
+            &_info {
+                padding: 10px;
+                margin: 10px auto;
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                h4 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                &_list li {
+                    font-size: 14px;
+                    padding: 6px 0;
+                }
+
+                &_contacts {
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .email a,
+                    .tel a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

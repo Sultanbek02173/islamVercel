@@ -1,0 +1,222 @@
+.partner-slider {
+    width: 100%;
+    
+    &__container {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    &__grid {
+      width: 90%;
+      display: grid;
+      gap: 1rem;
+      font-family: sans-serif, "Lato";
+    }
+  
+    &__card {
+      min-height: 480px;
+      color: rgba(0, 95, 75, 1);
+      width: 100%;
+      border-radius: 5px;
+      background-color: rgba(220, 213, 197, 1);
+      padding: 5px;
+      margin: 0;
+      transition: transform 0.3s ease-in-out;
+      display: -webkit-box;             
+      -webkit-line-clamp: 10;         
+      -webkit-box-orient: vertical;   
+      overflow: hidden;               
+      text-overflow: ellipsis;  
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  
+    &__image {
+      width: 100%;
+      
+    }
+  
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  
+    &__date {
+      font-size: 14px;
+      color: #666;
+    }
+  
+    &__title {
+      font-size: 17px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      background: linear-gradient(to right, rgba(241, 255, 212, 1), rgba(0, 95, 75, 1),rgba(0, 95, 75, 1),rgba(0, 95, 75, 1),rgba(0, 95, 75, 1), rgba(245, 245, 220, 1));
+      position: relative;
+      padding: 5px 0;
+      color: white;
+  
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        border-style: solid;
+      }
+  
+      &::before {
+        left: 0;
+        border-width: 15px 0 15px 7px;
+        border-color: transparent transparent transparent rgba(220, 213, 197, 1);
+      }
+  
+      &::after {
+        right: 0;
+        border-width: 15px 7px 15px 0;
+        border-color: transparent rgba(220, 213, 197, 1) transparent transparent;
+      }
+    }
+  
+    &__desc {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  
+    &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  
+    &__link {
+      font-size: 11px;
+      color: rgba(26, 66, 119, 1);
+      cursor: pointer;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: rgba(0, 95, 75, 1);
+      }
+    }
+  
+    &__flower {
+      width: 25%;
+      height: auto;
+    }
+  
+   
+    @media (max-width: 1200px) {
+      &__card {
+        width: 100%;
+        
+        .partner-slider__title {
+            font-size: 13px;
+          }
+
+          .partner-slider__date{
+            font-size: 12px;
+          }
+
+          .partner-slider__desc{
+            font-size: 12px;
+          }
+      }
+    }
+  
+    @media (max-width: 992px) {
+      &__card {
+        width: 100%;
+  
+        .partner-slider__desc {
+          font-size: 10px;
+        }
+
+        .partner-slider__title {
+            font-size: 8px;
+
+            &::before {
+                border-width: 10px 0 8px 4px;
+              }
+        
+              &::after {
+                border-width: 10px 4px 8px 0;
+              }
+          }
+
+          .partner-slider__link{
+            font-size: 10px;
+          }
+
+          .partner-slider__date{
+            font-size: 10px;
+          }
+      }
+    }
+  
+    @media (max-width: 768px) {
+        &__card {
+          width: 100%;
+    
+          .partner-slider__desc {
+            font-size: 10px;
+          }
+  
+          .partner-slider__title {
+              font-size: 10px;
+
+              &::before {
+                border-width: 10px 0 10px 4px;
+              }
+        
+              &::after {
+                border-width: 10px 4px 10px 0;
+              }
+            }
+  
+            .partner-slider__link{
+              font-size: 10px;
+            }
+
+            .partner-slider__date{
+                font-size: 10px;
+            }
+        }
+      }
+  
+    @media (max-width: 576px) {
+        &__card {
+          width: 100%;
+    
+          .partner-slider__desc {
+            font-size: 10px;
+          }
+  
+          .partner-slider__title {
+              font-size: 12px;
+              &::before {
+                border-width: 14px 0 14px 6px;
+              }
+        
+              &::after {
+                border-width: 14px 6px 14px 0;
+              }
+            }
+  
+            .partner-slider__link{
+              font-size: 10px;
+            }
+
+            .partner-slider__date{
+                font-size: 10px;
+            }
+            
+            
+        }
+    }
+  }
+  

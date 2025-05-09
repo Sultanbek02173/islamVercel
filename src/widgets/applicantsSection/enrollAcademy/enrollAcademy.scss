@@ -1,0 +1,49 @@
+.enrollAcademy {
+    font-family: 'Lato', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    p {
+        font-weight: 400;
+        font-size: clamp(18px, 3vw, 35px);
+        color: #242424;
+        line-height: 1.5;
+    }
+
+    h3 {
+        margin-top: 60px;
+        font-weight: 700;
+        font-size: clamp(32px, 5vw, 60px);
+        color: #005F4B;
+        margin-bottom: 30px;
+    }
+
+    li {
+        font-weight: 400;
+        font-size: clamp(18px, 3vw, 35px);
+        color: #242424;
+        margin: 15px 0;
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+
+    h4 {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: clamp(22px, 3vw, 35px);
+        color: #005F4B;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: #005F4B;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        // &:hover {
+        //     color: darken(#005F4B, 10%);
+        //     text-decoration: underline;
+        // }
+    }
+}

@@ -1,0 +1,177 @@
+
+
+.about-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+    &__item-title {
+      font-family: "Lato", sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: -2%;
+      color: #005f4b;
+      max-width: 90%;
+      margin: 0;
+    }
+  
+    &__item-description {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 30px;
+      color: #242424;
+      max-width: 85%;
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .about-texts{
+      &__item-title{
+        font-size: 25px;
+        line-height: 25px;
+      }
+      &__item-description{
+        font-size: 25px;
+        line-height: 25px;
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about-texts{
+      &__item-title{
+        font-size: 25px;
+        line-height: 25px;
+      }
+      &__item-description{
+        font-size: 25px;
+        line-height: 25px;
+      }
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .about-texts{
+      &__item-title{
+        font-size: 24px;
+        line-height: 24px;
+      }
+      &__item-description{
+        font-size: 24px;
+        line-height: 24px;
+        max-width: 100%;
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-texts{
+      width: 100%;
+  
+      &__item-title{
+        font-size: 24px;
+        line-height: 24px;
+        max-width: 100%;
+  
+      }
+      &__item-description{
+        font-size: 20px;
+        line-height: 20px;
+        max-width: 100%;
+      }
+    }
+  }
+
+
+  .info-carousel {
+    max-width: 90%;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+    &-title {
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -4%;
+      color: #005f4b;
+      margin: 0 !important;
+    }
+
+    &__wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    &__swiper {
+      width: 100%;
+      overflow: hidden !important;
+      height: 100% !important;
+      display: flex;
+    }
+
+    &__slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 290px !important;  
+      height: 223px;
+      transition: all 0.5s ease;
+      border-radius: none !important;
+      &.swiper-slide-active {
+        width: 350px !important;  
+        height: 253px !important;
+      }
+
+      &:not(.swiper-slide-active) {
+        width: 115px; 
+      }
+    }
+
+    &__image {
+      width: 100%;
+      cursor: pointer;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease;
+    }
+  }
+
+// @media (max-width: 576px) {
+//     .info-carousel {
+//       max-width: 100%;
+
+//       &__slide {
+//         width: 180px; 
+
+//         &.swiper-slide-active {
+//           width: 180px;
+//         }
+
+//         &:not(.swiper-slide-active) {
+//           width: 90px;  
+//         }
+//       }
+//     }
+// }

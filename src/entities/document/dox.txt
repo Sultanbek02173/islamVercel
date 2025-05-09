@@ -1,0 +1,5 @@
+entities (сущности) — бизнес-сущности. (например, User, Product, Order)
+CardBooksRating — карточка "Рейтинг книг".
+CardReaderRating — карточка "Рейтинг читателей".
+CardServices — карточка "Услуги".
+#6

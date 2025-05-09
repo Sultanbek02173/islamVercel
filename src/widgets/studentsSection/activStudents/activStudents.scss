@@ -1,0 +1,103 @@
+.activStudents {
+    &_block {
+        font-family: "Lato", sans-serif;
+        background: #222222;
+        padding: 50px;
+        color: #fff;
+        width: 90%;
+        margin: 30px auto;
+
+        &>div {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        &>div.content {
+            display: block;
+
+            &.with-image {
+                display: flex;
+                align-items: flex-start;
+                gap: 30px;
+                justify-content: space-between;
+            }
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: clamp(18px, 2.5vw, 35px);
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: clamp(16px, 2.5vw, 24px);
+
+        }
+
+        &_img {
+            display: none;
+
+            .with-image & {
+                display: block;
+                height: 300px;
+                min-width: 200px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        img {
+            max-width: 260px;
+            max-height: 489px;
+
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .activStudents {
+        &_block {
+            width: 95%;
+            padding: 20px;
+
+            &>div {
+                flex-direction: column;
+            }
+
+            .content.with-image {
+                flex-direction: column;
+            }
+
+            &_img {
+                .with-image & {
+                    width: 100%;
+                    height: 250px;
+                    margin-top: 20px;
+                }
+
+                min-width: 100%;
+                height: 250px;
+                margin-top: 20px;
+                max-width: 100% !important;
+                max-height: 489px;
+            }
+
+            img {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+
+                object-fit: fill;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,1 @@
+export { VisuallyImpaired } from './VisuallyImpaired/VisuallyImpaired';

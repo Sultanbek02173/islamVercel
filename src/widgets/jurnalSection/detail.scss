@@ -1,0 +1,290 @@
+// .Jurnal__detail {
+//     overflow: hidden;
+//     position: relative;
+  
+//     .jurnal__content {
+//       position: relative;
+  
+//       .jurnal__head {
+//         position: relative;
+  
+//         .jurnal__image {
+//           width: 100%;
+//           display: block;
+//           object-fit: cover;
+  
+//         }
+  
+//         .jurnal__subtitle {
+//           position: absolute;
+//           top: 20px;
+//           left: 20px;
+//           color: white;
+//           font-size: 60px;
+  
+//         }
+  
+//         @media (max-width: 992px) {
+//           .jurnal__subtitle {
+//             font-size: 45px;
+//           }
+//         }
+  
+//         @media (max-width: 768px) {
+//           .jurnal__subtitle {
+//             font-size: 30px;
+//           }
+//         }
+  
+//         @media (max-width: 576px) {
+//           .jurnal__subtitle {
+//             font-size: 20px;
+//           }
+  
+//         }
+//       }
+  
+//       .jurnal__texts {
+//         .jurnal__text {
+//           font-size: 20px;
+//           margin-top: 4%;
+//           font-weight: bold;
+//         }
+  
+//         .jurnal__hot {
+//           h2 {
+//             margin-top: 4%;
+//             font-size: 30px;
+//             color: rgba(0, 95, 75, 1);
+//           }
+  
+//           p {
+//             margin-top: 4%;
+//             font-size: 20px;
+//             width: 90%;
+//           }
+//         }
+  
+//         .jurnal__daily {
+//           h2 {
+//             font-size: 30px;
+//             margin-top: 4%;
+//             color: rgba(0, 95, 75, 1);
+//           }
+  
+//           li {
+//             margin-top: 1%;
+//             font-size: 20px;
+//           }
+//         }
+  
+//         @media (max-width: 768px) {
+//           .jurnal__text{
+//             font-size: 18px;
+//           }
+  
+//           .jurnal__hot{
+//             h2{
+//               font-size: 27px;
+//             }
+  
+//             p{
+//               font-size: 18px;
+//             }
+//           }
+  
+//           .jurnal__daily{
+//             h2{
+//               font-size: 27px;
+//             }
+  
+//             li{
+//               font-size: 18px;
+//             }
+//           }
+//         }
+  
+//         @media (max-width: 576px) {
+//           .jurnal__text{
+//             font-size: 15px;
+//             margin-top: 10%;
+//           }
+  
+//           .jurnal__hot{
+//             h2{
+//               font-size: 27px;
+//               margin-top: 10%;
+//             }
+  
+//             p{
+//               font-size: 18px;
+//               margin-top: 10%;
+  
+//             }
+//           }
+  
+//           .jurnal__daily{
+//             h2{
+//               font-size: 27px;
+//               margin-top: 10%;
+//             }
+  
+//             li{
+//               font-size: 18px;
+//               margin-top: 7%;
+//             }
+//           }
+//         }
+//       }
+  
+//     }
+  
+//   }
+
+
+.jurnal__detail {
+    overflow: hidden;
+    position: relative;
+  
+    .jurnal__image {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+  
+    }
+  
+  
+    .jurnal__content {
+      position: relative;
+  
+  
+      .jurnal__head {
+        position: relative;
+  
+  
+  
+        .jurnal__subtitle {
+          position: absolute;
+          top: -65vw;
+          color: white;
+          font-size: 60px;
+  
+        }
+  
+        @media (max-width: 992px) {
+          .jurnal__subtitle {
+            font-size: 45px;
+          }
+        }
+  
+        @media (max-width: 768px) {
+          .jurnal__subtitle {
+            font-size: 30px;
+          }
+        }
+  
+        @media (max-width: 576px) {
+          .jurnal__subtitle {
+            font-size: 20px;
+          }
+  
+        }
+      }
+  
+      .jurnal__texts {
+        .jurnal__text {
+          font-size: 20px;
+          margin-top: 4%;
+          font-weight: bold;
+        }
+  
+        .jurnal__hot {
+          h2 {
+            margin-top: 4%;
+            font-size: 30px;
+            color: rgba(0, 95, 75, 1);
+          }
+  
+          p {
+            margin-top: 4%;
+            font-size: 20px;
+            width: 90%;
+          }
+        }
+  
+        .jurnal__daily {
+          h2 {
+            font-size: 30px;
+            margin-top: 4%;
+            color: rgba(0, 95, 75, 1);
+          }
+  
+          li {
+            margin-top: 1%;
+            font-size: 20px;
+          }
+        }
+  
+        @media (max-width: 768px) {
+          .jurnal__text{
+            font-size: 18px;
+          }
+  
+          .jurnal__hot{
+            h2{
+              font-size: 27px;
+            }
+  
+            p{
+              font-size: 18px;
+            }
+          }
+  
+          .jurnal__daily{
+            h2{
+              font-size: 27px;
+            }
+  
+            li{
+              font-size: 18px;
+            }
+          }
+        }
+  
+        @media (max-width: 576px) {
+          .jurnal__text{
+            font-size: 15px;
+            margin-top: 10%;
+          }
+  
+          .jurnal__hot{
+            h2{
+              font-size: 27px;
+              margin-top: 10%;
+            }
+  
+            p{
+              font-size: 18px;
+              margin-top: 10%;
+  
+            }
+          }
+  
+          .jurnal__daily{
+            h2{
+              font-size: 27px;
+              margin-top: 10%;
+            }
+  
+            li{
+              font-size: 18px;
+              margin-top: 7%;
+            }
+          }
+        }
+      }
+  
+    }
+  
+  }
+  

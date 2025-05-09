@@ -1,0 +1,154 @@
+
+.parlamentStudents {
+    font-family: "Lato", sans-serif;
+
+    &_block {
+        width: 90%;
+        margin: 20px auto;
+        padding: 30px 20px;
+        background: #004234;
+        display: flex;
+        align-items:flex-end;
+        gap: 30px;
+
+        &_imggroup {
+            flex: 0 0 350px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+               
+            }
+        }
+
+        &_text {
+            flex: 1;
+            padding: 0 15px;
+            color: #fff;
+
+            h3 {
+                font-weight: 800;
+                font-size: clamp(18px, 2.5vw, 28px);
+                margin-bottom: 1em;
+            }
+
+            .line {
+                border-top: 5px solid #fff;
+                border-bottom: 5px solid #fff;
+                padding: clamp(12px, 2vw, 25px) 0;
+                margin-block: 1em;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: clamp(16px, 1.8vw, 24px);
+                line-height: 1.4;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .parlamentStudents_block {
+        flex-direction: column;
+
+        &_imggroup {
+            width: 100%;
+            max-width: 500px;
+            min-height: 350px;
+            margin: 0 auto;
+        }
+
+        &_text {
+            width: 100%;
+            padding-inline: clamp(10px, 2vw, 20px);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .parlamentStudents_block {
+        flex-direction: column;
+        padding: 20px 15px;
+
+        &_imggroup {
+            flex: 0 0 auto;
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        &_text {
+            padding: 15px 10px;
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .line {
+                padding: 15px 0;
+                margin: 15px 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .parlamentStudents {
+        &_block {
+            width: 100%;
+            padding: 15px 10px;
+            margin: 15px auto;
+            gap: 20px;
+
+            &_imggroup {
+                min-height: 250px;
+                width: 100%;
+
+                img {
+                    position: relative;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+
+                margin-bottom: -20px;
+            }
+
+            &_text {
+                padding: 10px 15px;
+                margin: 0;
+                width: 100%;
+
+                h3 {
+                    font-size: 18px;
+                    margin: 10px 0 15px;
+                }
+
+                .line {
+                    padding: 12px 0;
+                    margin: 12px 0;
+                    border-width: 3px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.4;
+                    margin: 12px 0;
+                }
+            }
+        }
+    }
+}

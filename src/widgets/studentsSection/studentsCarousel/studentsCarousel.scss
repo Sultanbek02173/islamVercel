@@ -1,0 +1,217 @@
+.student-slider {
+  padding: 40px 0;
+  width: 90%;
+  .swiper-wrapper{
+  width: 100px;
+}
+  // overflow: hidden;
+  // display: flex;
+  // justify-content: center; // Центрируем изображение
+  // align-items: center;
+}
+// .swiper-wrapper{
+//   width: 100px;
+// }
+.swiper-3d {
+  // 
+  perspective: 600px;
+}
+.student-slide {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s, filter 0.5s;
+
+  img {
+    margin: 0 20px;
+    width: 350px; 
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s, filter 0.5s;
+  }
+
+  &.swiper-slide-active {
+    img {
+      width: 360px; 
+      height: 260px;
+      filter: none;
+      transform: scale(1.2);
+    }
+  }
+
+  &:not(.swiper-slide-active) {
+    filter: blur(3px);
+    transform: scale(0.9);
+  }
+
+  @media (max-width: 992px) {
+    img{
+      width: 300px;
+      height: 200px;
+    }
+    &.swiper-slide-active {
+      img {
+        width: 260px; 
+        height: 230px;
+        filter: none;
+        transform: scale(1.2);
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    img{
+      width: 250px;
+      height: 150px;
+    }
+    &.swiper-slide-active {
+      img {
+        width: 200px; 
+        height: 170px;
+        filter: none;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.studentsCarousel {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 5%;
+
+
+
+  .slick-list {
+    overflow: hidden !important;
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+  }
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+
+    .slide-image {
+      width: 320px;
+      height: 270px;
+      object-fit:fill;
+      border-radius: 10px;
+      transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+    }
+  }
+
+  .slick-slide:not(.slick-center) {
+    transform: scale(0.7);
+  }
+
+  .slick-center {
+    opacity: 1;
+    transform: scale(0.9);
+    filter: blur(0px);
+    z-index: 1;
+    .slide-image {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .studentsCarousel {
+
+    width: 800px;
+
+    .slide {
+
+      .slide-image {
+        width: 250px;
+        height: 270px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .studentsCarousel {
+
+    width: 700px;
+
+    .slide {
+
+      .slide-image {
+        width: 220px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .studentsCarousel {
+
+    width: 600px;
+
+    .slide {
+
+      .slide-image {
+        width: 190px;
+        height: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .studentsCarousel {
+
+    width: 500px;
+
+    .slide {
+
+      .slide-image {
+        width: 190px;
+        height: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .studentsCarousel {
+
+    width: 100%;
+
+    .slide {
+
+      .slide-image {
+        width: 190px;
+        height: 180px;
+      }
+    }
+    .slick-center {
+      opacity: 1;
+      transform: scale(0.9);
+      filter: blur(0px);
+      z-index: 1;
+      .slide-image {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.about-document {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  &__block {
+    width: 100%;
+    padding: 19px 24px;
+    background-color: transparent;
+    border: solid 2px #005f4b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    &-left {
+      &-title {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 26px;
+        letter-spacing: -4%;
+        color: #000000;
+      }
+    }
+    &-right {
+      display: flex;
+      gap: 16px;
+      &-open {
+        padding: 10px;
+        border: solid 2px #1a4277;
+        color: #1a4277;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: -4%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+      }
+      &-download {
+        padding: 10px;
+        border: solid 2px #000000;
+        color: #000000;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: -4%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .about-document{
+    &__block{
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-document{
+    width: 100%;
+    &__block{
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 13px 18px;
+      &-right{
+        // flex-wrap: wrap;
+      }
+      &-left{
+        &-title{
+          font-size: 26px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about-document{
+    width: 100%;
+    align-items: center;
+    &__block{
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 10px 7px;
+      &-right{
+        flex-wrap: wrap;
+        &-download, &-open{
+          padding: 7px;
+        }
+      }
+      &-left{
+        &-title{
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+

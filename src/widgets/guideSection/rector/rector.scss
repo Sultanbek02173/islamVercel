@@ -1,0 +1,276 @@
+.rector {
+    padding: 40px 0;
+
+    &_content {
+        &_img {
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 40px;
+            width: 90%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+
+                object-fit: cover;
+            }
+
+            &_text {
+                margin-left: 40px;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    padding: 20px 0;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: #005F4B;
+                    border-top: 2px solid #000;
+                    border-bottom: 2px solid #000;
+
+                }
+
+                h3:nth-of-type(2) {
+                    border-top: none;
+                }
+
+                h4 {
+                    font-size: 1.4rem;
+                    border-top: 2px solid #000;
+                    border-bottom: 2px solid #000;
+                    font-weight: 600;
+                    color: #333;
+                    padding: 10px 0;
+                    margin-top: auto;
+                }
+            }
+        }
+
+
+
+
+        &_info {
+            border: 2px solid #004638;
+            padding: 20px;
+            width: 90%;
+            margin-top: 50px;
+
+            h4 {
+                font-size: 28px;
+                color: #005F4B;
+                margin: 30px 0 15px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 1.6;
+                color: #333;
+            }
+
+            &_list {
+                list-style: none;
+                padding-left: 20px;
+                margin: 15px 0;
+
+                li {
+                    position: relative;
+                    padding: 8px 0;
+                    font-size: 30px;
+                    line-height: 1.4;
+
+                    &:before {
+                        content: "•";
+                        position: absolute;
+                        left: -20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            &_contacts {
+                margin-top: 30px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+
+                .email a {
+                    color: #1A4277;
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+
+                .tel a {
+                    font-weight: 900;
+                    font-size: 25px;
+                    color: #333;
+                }
+
+                &_btn {
+                    font-family: "Lato", sans-serif;
+                    font-weight: 400;
+                    font-size: 22px;
+                    text-decoration: dotted;
+
+                    border: none;
+                    border-bottom: 2px solid black;
+                    background: transparent;
+                }
+            }
+
+            &_footer {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    background: transparent;
+                    color: #1A4277;
+                    border: none;
+                    cursor: pointer;
+
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .rector_content {
+        &_img {
+            img {
+                width: 300px;
+            }
+
+            &_text {
+                margin-left: 20px;
+
+                h3 {
+                    font-size: 22px;
+                }
+
+                h4 {
+                    margin-top: 100px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .rector_content {
+        &_img {
+            img {
+                width: 300px;
+            }
+
+            &_text {
+                margin-left: 20px;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                h4 {
+                    margin-top: 100px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .rector_content {
+        &_img {
+            align-items: center;
+
+            img {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            &_text {
+                margin-left: 20px;
+                margin-top: 20px;
+                width: 100%;
+
+                h3 {
+                    font-size: 20px;
+                    padding: 15px 0;
+                }
+
+                h4 {
+                    margin-top: 20px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &_info {
+            h3 {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 18px;
+            }
+
+            p,
+            &_list li {
+                font-size: 14px !important;
+            }
+
+           
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .rector {
+        padding: 20px 0;
+    }
+
+    .rector_content {
+        &_img {
+            flex-direction: column;
+
+            img {
+                max-width: 340px;
+                width: 100%;
+            }
+
+            &_text {
+
+                h3,
+                h4 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .email {
+        font-size: 14px;
+    }
+
+  
+    .rector_content_info_contacts {
+        flex-direction: column;
+        align-items: flex-start;
+        .tel a {
+            font-size: 16px;
+        }
+    }
+    .rector_content_info_footer {
+        flex-direction: column;
+        align-items: flex-start;
+        button {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.header_top {
+  background: #008000;
+
+  &>div {
+    color: #fff;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &>div {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &>a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+        transition: opacity 0.2s;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+
+        &:hover {
+          opacity: 1;
+          color: #ffcc00;
+        }
+      }
+    }
+  }
+
+  &_icon {
+    font-size: 16px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: #fff;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header_top {
+    display: none;
+  }
+}

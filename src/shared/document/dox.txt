@@ -1,0 +1,11 @@
+shared — переиспользуемый код, не имеющий отношения к специфике приложения/бизнеса. (например, UIKit, libs, API)
+HomePage -Глаяная 
+AboutAcademyPage - Об академии
+GuidePage -Руководство
+EducationPage - Образование
+Science -Наука
+ActivityPage -Деятельность
+StudentsPage -  Студенты
+ApplicantsPage - Абитуриентам
+GalleryPage -Галерея
+#7/test

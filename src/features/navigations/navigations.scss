@@ -1,0 +1,187 @@
+.navigations {
+
+    margin-right: 30px;
+    min-height: 100vh;
+    height: auto;
+    max-width:400px;
+    min-width: 25%;
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(180deg, rgb(3, 65, 52) 0%, rgba(3, 65, 52, 0.95) 100%);
+
+    .navigation_group {
+        max-width: 100%;
+        position: sticky;
+        top: 0px; 
+        z-index: 100;
+    }
+
+    &_btn {
+        font-weight: 500;
+        font-size: clamp(28px, 2.5vw, 40px);
+        color: #fff;
+        background: #005F4B;
+        padding: 15px 20px;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+                display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: linear-gradient(180deg, rgb(3, 65, 52) 0%, rgba(3, 65, 52, 0.95) 100%);
+
+        }
+span{
+    margin: 0 10px;
+}
+        .open {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .nav-container {
+
+        padding: 20px 50px;
+        width: 100%;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+        pointer-events: none;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(247, 236, 207, 0.5);
+            border-radius: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(247, 236, 207, 0.7);
+        }
+
+        &.visible {
+            transform: scaleY(1);
+
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+
+        .nav-element {
+            background: transparent;
+            border: none;
+            margin: 15px 0;
+            width: 100%;
+            text-align: left;
+            font-weight: 400;
+            font-size: clamp(24px, 2vw, 34px);
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 3s ease;
+            position: relative;
+            cursor: pointer;
+
+
+
+            &.active {
+                color: #F7ECCF;
+                font-weight: 500;
+            }
+
+            .open {
+                width: 20px;
+                height: 20px;
+                transition: transform 0.3s ease;
+            }
+        }
+
+        .sub-links {
+            padding-left: 15%;
+            list-style: none;
+
+            button {
+                background: transparent;
+                border: none;
+                text-align: left;
+                font-weight: 400;
+                font-size: clamp(20px, 1.8vw, 26px);
+                color: rgba(255, 255, 255, 0.9);
+                cursor: pointer;
+                position: relative;
+                margin: 12px 0;
+                padding: 8px 0 8px 25px;
+                width: 100%;
+                transition: all 0.3s ease;
+
+                &::before {
+                    content: '•';
+                    position: absolute;
+                    left: 0;
+                    font-size: 26px;
+                    color: #F7ECCF;
+                }
+
+                &:hover {
+                    color: #F7ECCF;
+                    transform: translateX(5px);
+                }
+
+                &.active {
+                    color: #F7ECCF;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .navigations {
+        min-width: 30%;
+        max-width: 30%;
+        .nav-container {
+            padding: 20px 30px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .navigations {
+        position: relative;
+        margin: 0;
+        min-height: auto;
+        min-width: 100%;
+        max-width: 100%;
+
+        .navigation_group {
+            position: relative;
+            top: 0;
+        }
+
+        .nav-container {
+            padding: 0 20px;
+        }
+
+        .sub-links {
+            padding-left: 40px !important;
+        }
+    }
+
+ 
+}

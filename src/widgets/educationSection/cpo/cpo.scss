@@ -1,0 +1,29 @@
+.cpo {
+    font-family: "Lato", sans-serif;
+
+    p {
+        font-weight: 400;
+        font-size: clamp(18px, 2.5vw, 35px);
+        color: #242424;
+        margin: 20px auto;
+        span{
+            font-size: clamp(25px, 3.5vw, 35px) !important;
+   
+        }
+    }
+
+    h3 {
+        color: #005f4b;
+
+        margin: 20px auto;
+
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: clamp(26px, 3.5vw, 55px);
+        color: #005f4b;
+        margin-top: 30px;
+    }
+
+}

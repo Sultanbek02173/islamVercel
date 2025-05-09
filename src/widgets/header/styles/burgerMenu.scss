@@ -1,0 +1,221 @@
+.burger-menu {
+  position: static;
+  display: none;
+
+  #menu__toggle {
+    opacity: 0;
+    position: absolute;
+
+    &:checked+.menu__btn span {
+      transform: rotate(45deg);
+      transition: transform 0.2s ease-in-out;
+
+      &::before {
+        top: 0;
+        transform: rotate(0);
+        opacity: 0;
+        transition: top 0.3s ease-in-out, opacity 0.1s ease-in-out;
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(90deg);
+        transition: top 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+    }
+
+    &:checked~.menu__box {
+      visibility: visible;
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  .menu__btn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    // z-index: 1000;
+    right: 20px;
+
+    span {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 3px;
+      background-color: #e0dfdf;
+      border-radius: 10px;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+
+
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #e0dfdf;
+        border-radius: 10px;
+        transition: transform 0.25s ease, top 0.25s ease;
+      }
+
+      &::before {
+        top: -8px;
+      }
+
+      &::after {
+        top: 8px;
+      }
+
+      &.active {
+        transform: rotate(45deg);
+      }
+
+      &.active::before {
+        transform: rotate(90deg);
+        top: 0;
+      }
+
+      &.active::after {
+        transform: rotate(90deg);
+        top: 0;
+      }
+    }
+  }
+
+
+  .menu__box {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    width: 50%;
+    height: 100vh;
+    padding: 80px 0;
+    background: #005F4B;
+    padding: 20px;
+    box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease, opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    z-index: 998;
+    overflow-y: auto;
+
+    &.open {
+      visibility: visible;
+      right: 0;
+    }
+
+    .menu__item {
+      display: block;
+      padding: 12px 24px;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.25s ease;
+
+      &:hover {
+        background-color: #cfd8dc;
+      }
+    }
+
+    .mobile-header {
+      padding: 15px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+      img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+      }
+
+      .header-controls {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        select {
+          background: transparent;
+          color: #fff;
+          border: none;
+          padding: 5px;
+          margin-right: 5px;
+          cursor: pointer;
+
+          option {
+            background: #005F4B;
+          }
+        }
+      }
+    }
+
+    .mobile-menu {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .header_bottom_link {
+        display: block;
+        margin-bottom: 10px;
+
+        .header_bottom_link_btn {
+          width: 100%;
+          padding: 12px 20px;
+          text-align: left;
+          font-size: 16px;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+          border: 1px solid transparent;
+          position: relative;
+
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+
+    .menu__box {
+      width: 70% !important;
+    }
+
+    .mobile-header {
+      display: flex;
+      padding: 10px;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .burger-menu {
+    .menu__box {
+      width: 100% !important;
+
+      .header-controls {
+
+        gap: 1px !important;
+      }
+    }
+  }
+}
+

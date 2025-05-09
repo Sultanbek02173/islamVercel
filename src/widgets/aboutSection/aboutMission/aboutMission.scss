@@ -1,0 +1,99 @@
+
+
+.about-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+    &__item-title {
+      font-family: "Lato", sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: -2%;
+      color: #005f4b;
+      max-width: 90%;
+      margin: 0;
+    }
+  
+    &__item-description {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 30px;
+      color: #242424;
+      max-width: 85%;
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .about-texts{
+      &__item-title{
+        font-size: 25px;
+        line-height: 25px;
+      }
+      &__item-description{
+        font-size: 25px;
+        line-height: 25px;
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about-texts{
+      &__item-title{
+        font-size: 25px;
+        line-height: 25px;
+      }
+      &__item-description{
+        font-size: 25px;
+        line-height: 25px;
+      }
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .about-texts{
+      &__item-title{
+        font-size: 24px;
+        line-height: 24px;
+      }
+      &__item-description{
+        font-size: 24px;
+        line-height: 24px;
+        max-width: 100%;
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-texts{
+      width: 100%;
+  
+      &__item-title{
+        font-size: 24px;
+        line-height: 24px;
+        max-width: 100%;
+  
+      }
+      &__item-description{
+        font-size: 20px;
+        line-height: 20px;
+        max-width: 100%;
+      }
+    }
+  }

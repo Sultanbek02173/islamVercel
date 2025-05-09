@@ -1,0 +1,111 @@
+.sciense {
+    .container {
+      
+
+        .title {
+            color: #015c3f;
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .description {
+            margin-top: 50px;
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 35px;
+            line-height: 35px;
+            letter-spacing: 0%;
+        }
+
+        .subtitle {
+            color: #015c3f;
+            font-weight: bold;
+            margin-top: 100px;
+            font-family: Lato;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 60px;
+            letter-spacing: -2%;
+        }
+
+        .list {
+            margin: 10px 0;
+            padding-left: 20px;
+            font-family: Lato;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 35px;
+            letter-spacing: 0%;
+
+            li {
+                margin-bottom: 20px;
+            }
+        }
+
+        .contact {
+            font-weight: bold;
+            color: #015c3f;
+            font-family: Lato;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 35px;
+            letter-spacing: 0%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 18px;
+
+            .title {
+                font-size: 55px;
+                line-height: 60px;
+            }
+
+            .description,
+            .list,
+            .contact {
+                font-size: 28px;
+                line-height: 30px;
+            }
+
+            .subtitle {
+                font-size: 40px;
+                line-height: 45px;
+                margin-top: 60px;
+            }
+
+            .list {
+                padding-left: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 360px) {
+        .container {
+            padding: 15px;
+
+            .title {
+                font-size: 40px;
+                line-height: 45px;
+            }
+
+            .description,
+            .list,
+            .contact {
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            .subtitle {
+                font-size: 30px;
+                line-height: 35px;
+                margin-top: 50px;
+            }
+
+            .list {
+                padding-left: 15px;
+            }
+        }
+    }
+}

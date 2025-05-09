@@ -1,0 +1,145 @@
+.gallery {
+    .gallery_select {
+
+        padding: 40px 0 40px 40px;
+        display: flex;
+        justify-content: end;
+
+        div {
+
+            select {
+                background: rgba(0, 95, 75, 1);
+                color: #fff;
+                padding: 10px;
+                font-size: 30px;
+                border: none;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .gallery_group {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 10px;
+
+        .gallery_card {
+            margin: 50px 10px;
+
+            border-radius: 10px;
+
+
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+    }
+}
+
+.gallery_data {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    background: #226b4e;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 24px;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        border-style: solid;
+    }
+
+    &::before {
+        left: 0;
+        border-width: 22px 0 22px 15px;
+        border-color: transparent transparent transparent rgba(245, 245, 220, 1);
+    }
+
+    &::after {
+        right: 0;
+        border-width: 22px 15px 22px 0;
+        border-color: transparent rgba(245, 245, 220, 1) transparent transparent;
+
+    }
+}
+
+
+// Адаптивные стили
+@media (max-width: 1440px) {
+    .gallery_select div select {
+        font-size: 28px;
+
+    }
+
+    .gallery_data {
+        font-size: 22px;
+        padding: 9px 18px;
+    }
+
+    .gallery_banner h2 {
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .gallery_group {
+        .gallery_card {
+            align-self: end;
+            width: 30% !important;
+            height: 326px !important;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery_group {
+        .gallery_card {
+            align-self: end;
+            width: 46% !important;
+            height: 326px !important;
+            margin: 0;
+        }
+    }
+
+    .gallery_select div select {
+        font-size: 24px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery_group {
+        .gallery_card {
+            align-self: end;
+            width: 100% !important;
+            height: 326px !important;
+            margin: 0 auto;
+        }
+    }
+
+    .gallery_select {
+        padding: 0 !important;
+    }
+
+    .gallery_select div select {
+        font-size: 16px !important;
+        margin: 0 4px !important;
+        padding: 6px;
+    }
+}
+
+// Убедитесь, что все блоки корректно закрыты
